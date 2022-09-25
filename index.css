@@ -10,10 +10,14 @@ body {
   color: white;
 }
 
+.link {
+  font-weight: 600;
+}
+
 .title {
   font-size: 5rem;
   border-radius: 1rem;
-  padding: 2rem;
+  margin: 2rem 0 2rem 0;
 }
 
 #output img {
@@ -26,5 +30,31 @@ body {
   border-radius: 1rem;
   margin: 2rem 0 1rem 0;
   outline: none;
-  border: 2px white solid;;
+  border: 2px white solid;
+}
+
+.footer {
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  #button {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .title {
+    font-size: 1.5rem;
+  }
 }
