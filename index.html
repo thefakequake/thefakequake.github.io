@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuaKe logo gen</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <!-- prettier-ignore -->
+    <py-env>
+      - Pillow
+    </py-env>
+    <h1 class="title">QuaKe Logo Generator</h1>
+    <div id="output"></div>
+    <button id="button">Generate logo</button>
+    <p>Made with Pyscript and PIL.</p>
+    <py-script src="./gen.py" />
+  </body>
+</html>
