@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <meta property="og:title" content="QuaKe Logo Generator" />
+    <meta property="og:url" content=https://thefakequake.github.io/>
+    <meta property="og:description" content="One gradient, infinite possibilities.">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/thefakequake/personal-site/master/public/pixel_quake.png"
+    />
   </head>
   <body>
     <!-- prettier-ignore -->
@@ -18,7 +26,10 @@
     <h1 class="title">QuaKe Logo Generator</h1>
     <div id="output"></div>
     <button id="button">Generate logo</button>
-    <p>Made with Pyscript and PIL.</p>
+    <div class="footer">
+      <p>Made with Pyscript and PIL.</p>
+      <p>Check out my <a class="link" href="https://thefakequake.vercel.app">personal site</a>!</p>  
+    </div>
     <py-script src="./gen.py" />
   </body>
 </html>
