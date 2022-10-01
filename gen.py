@@ -3,7 +3,7 @@ import math
 from random import randint
 from js import document, Uint8Array, window, File
 from io import BytesIO
-from pyodide import create_proxy
+from pyodide import ffi
 
 darken_map = [
     [False, False, False, False, False, False, False, False, False, False],
@@ -63,7 +63,7 @@ def generate(e = None):
     output.appendChild(new_image)
     document.body.style.backgroundImage = "linear-gradient(to bottom right, #{:02x}{:02x}{:02x}, #{:02x}{:02x}{:02x}".format(*from_colour, *to_colour)
 
-generate_image = create_proxy(generate)
+generate_image = ffi.create_proxy(generate)
 
 document.getElementById("button").addEventListener("click", generate_image)
 generate()

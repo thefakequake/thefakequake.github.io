@@ -30,6 +30,8 @@ body {
   border-radius: 1rem;
   margin: 2rem 0 1rem 0;
   outline: none;
+  cursor: pointer;
+  background-color: transparent;
   border: 2px white solid;
 }
 
