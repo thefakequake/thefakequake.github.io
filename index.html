@@ -7,8 +7,8 @@
     <title>QuaKe logo gen</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="./pyscript/style.css" />
+    <script defer src="./pyscript/script.js"></script>
     <meta property="og:title" content="QuaKe Logo Generator" />
     <meta property="og:url" content=https://thefakequake.github.io />
     <meta property="og:description" content="One gradient, infinite possibilities." />
@@ -21,9 +21,9 @@
   </head>
   <body>
     <!-- prettier-ignore -->
-    <py-env>
-      - Pillow
-    </py-env>
+    <py-config>
+      packages = ["Pillow"]
+    </py-config>
     <h1 class="title">QuaKe Logo Generator</h1>
     <div id="output"></div>
     <button id="button">Generate logo</button>
